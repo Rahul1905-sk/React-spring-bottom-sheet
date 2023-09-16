@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
-const Modal = ({ content, toggleModal }) => {
+const BottomSheet = ({ content, toggleModal }) => {
   const [loaded, setLoaded] = useState(false);
   const [view, setView] = useState("bottom");
   const [mousePressed, setMousePressed] = useState(false);
@@ -64,4 +64,4 @@ const Modal = ({ content, toggleModal }) => {
   );
 };
 
-export default Modal;
+export default BottomSheet;

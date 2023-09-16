@@ -1,6 +1,6 @@
-import { useState } from "react";
-import Modal from "./components/Modal";
+import { useState } from "react"; 
 import ModalContent from "./components/ModalContent"; 
+import BottomSheet from "./components/BottomSheet";
 
 function App() {
   const [showModal, setShowModal] = useState(true);
@@ -16,7 +16,7 @@ function App() {
         <h1>Bottom Sheet</h1>
         <button onClick={toggleModal}>{showModal ? "Close":"Open"}</button>
        </div>
-       {showModal && <Modal content={<ModalContent/>} toggleModal={toggleModal} />}
+       {showModal && <BottomSheet content={<ModalContent/>} toggleModal={toggleModal} />}
     </div>
   
   );
