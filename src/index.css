@@ -6,7 +6,8 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   :root {
-    --bg:#1A202C;
+    --bg:#1A202C; 
+
   }
   html{
     background-color: var(--bg)
@@ -50,25 +51,30 @@
     height: 100%;
     display: flex;
     justify-content: center;
+  
    
   }
   .modal-content{
     width: 500px;
     height: 100vh;
     align-self: flex-end ;
-    background: #fffa;
+    background: white; 
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 1rem;
     padding-top: 0;
+    /* padding-bottom: 2rem; */
     transition:  all 300ms;
   }
   .modal-container{
     width: 100%;
     height: 100%;
+    padding: .5rem 2rem 5rem 2rem;
+    overflow-y: scroll;
+    text-align: justify;
   }
-  .modal-container button::selection{
+  .modal-content button::selection{
     background-color: transparent;
   }
   .notch {
@@ -105,3 +111,9 @@
   
   
   
+
+ 
+
+  .bold{
+    font-weight: bold;
+  }
